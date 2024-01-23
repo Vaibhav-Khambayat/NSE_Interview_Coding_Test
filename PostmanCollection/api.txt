@@ -1,0 +1,19 @@
+For register API => http://localhost/NSE_Interview_Coding_Test/Controller/RegisterController.php/register
+
+Test Params => 
+
+UserName: NSE_Test
+UserMobile: 9595959595
+UserEmail: nsetest@gmail.com
+UserPassword: AA123456@AA
+File: {upload file}
+
+
+For Login API => http://localhost/NSE_Interview_Coding_Test/Controller/LoginController.php/login
+
+Test Params =>
+
+UserName: NSE_Test
+UserMobile: 9595959595
+UserEmail: nsetest@gmail.com
+UserPassword: AA123456@AA
