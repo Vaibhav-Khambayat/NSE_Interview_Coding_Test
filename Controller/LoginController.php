@@ -16,13 +16,7 @@ class LoginController {
 
         $Data = new stdClass();
 
-        if (!preg_match('/^[a-zA-Z0-9_]+$/', $UserName)){
-            $Data->Message = "Invalid User Name. Must be alphanumeric with underscores only.";
-        }else if (!preg_match('/^[6-9]\d{9}$/', $UserMobile)) {
-            $Data->Message = "Invalid Mobile Number. Must be a 10-digit starting with 6, 7, 8, or 9.";
-        }else if (!filter_var($UserEmail, FILTER_VALIDATE_EMAIL)){
-            $Data->Message = "Invalid UserEmail format.";
-        }else{
+        
             $result = $this->userModel->loginUser($UserName, $UserMobile, $UserEmail);
             if ($result !== false) {
                 if(password_verify($UserPassword,$result[0]['UserPassword'])){
@@ -38,7 +32,7 @@ class LoginController {
                 $Data->Success = false;
                 $Data->ErrorMessage = "Login failed";
             }
-        }
+        
         $this->print_api_response_data($Data);
     }
 

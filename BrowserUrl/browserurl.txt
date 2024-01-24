@@ -1,0 +1,8 @@
+Registration Page URL => http://localhost/NSE_Interview_Coding_Test/View/register.php
+
+Login Page URL => http://localhost/NSE_Interview_Coding_Test/View/login.php
+
+After successful registration, you will be redirected to the login page. 
+On the login page, you can enter either your name or mobile number or email, and password to log in. 
+Upon successful login, you will be redirected to the login success page. 
+In case of failure, you will be redirected to the login failed page.
