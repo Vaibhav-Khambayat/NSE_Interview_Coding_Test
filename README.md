@@ -10,6 +10,8 @@ This repository contains the code for implementing user registration and login f
 
 **Model**: The `Model` folder contains common files used by both controllers. These files encapsulate the logic for interacting with the database and executing stored procedures.
 
+**Views**: Please check the browserurl.txt file in the BrowserUrl folder for accessing the registration and login screens.
+
 **Documents**: The Documents folder is the designated location for storing uploaded files during the registration process.
 
 **SQL_Scripts**: The `SQL_Scripts` folder holds the SQL scripts necessary for setting up the database. Inside this folder, you will find a script to create the required tables and stored procedures for both registration and login.
@@ -21,8 +23,9 @@ This repository contains the code for implementing user registration and login f
 1. **Database Setup**: Execute the SQL scripts in the `SQL_Scripts` folder to set up the required tables and stored procedures in your database.
 2. **Controller Code**: Review the code in the `Controller` folder to understand the implementation of registration and login functionalities.
 3. **Model Code**: Explore the common model files in the `Model` folder, which handle database operations.
-4. **File Upload**: Uploaded files during registration will be stored in the Documents folder.
-5. **Postman Testing**: Import the provided Postman collection from the `Postman Collection` folder. Use this collection to test the registration and login APIs with the included dummy data.
+4. **View Code**: Explore the View Files, Registration, login and success and failure files.
+5. **File Upload**: Uploaded files during registration will be stored in the Documents folder.
+6. **Postman Testing**: Import the provided Postman collection from the `Postman Collection` folder. Use this collection to test the registration and login APIs with the included dummy data.
 
 ## Contact
 
